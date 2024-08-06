@@ -10,6 +10,12 @@ let isNumber = false
 
 let userName = prompt("Aman Shah") 
 
+
+
+const button = document.getElementById('myButton');
+
+button.addEventListener('click', handleClick);
+
 function handleClick() {
     alert('Hello, ' + userName, 'my name is' + myName + '.','A lot of people say I like the number' + quantity, 'but in reality, that is' + isNumber + '.', ' In reality,  my favorite number is' + myNumber + '.');
   }
