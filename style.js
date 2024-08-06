@@ -12,7 +12,7 @@ let userName = prompt("Aman Shah")
 
 
 
-const button = document.getElementById('myButton');
+const button = querySelector('button');
 
 button.addEventListener('click', handleClick);
 
