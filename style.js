@@ -1,21 +1,10 @@
-let myName = "Steven"
+// Defining variables in different types \\
+const adjective = "enormous"
+const MoneyCount = 300000
+const DoubleUp = MoneyCount * 2
+const isRich = true
+const Username = prompt("What is your name?")
 
-let myNumber = 40**2 
-myNumber = myNumber - 3 
-
-let quantity = "12"; 
-quantity = Number(quantity)
-
-let isNumber = false 
-
-let userName = prompt("Aman Shah") 
-
-
-
-const button = querySelector('button');
-
-button.addEventListener('click', handleClick);
-
-function handleClick() {
-    alert('Hello, ' + userName, 'my name is' + myName + '.','A lot of people say I like the number' + quantity, 'but in reality, that is' + isNumber + '.', ' In reality,  my favorite number is' + myNumber + '.');
-  }
+// Construct Story \\
+const story = `Once upon a time, ${Username} found an ${adjective} amount of money.` + ` The amount was ${MoneyCount} and ${Username} decided he wanted to double the amount.` + ` In the end, ${Username} ended up getting ${DoubleUp}.` + ` His friends asked him if he really is rich and he told them that it is ${isRich}.`
+document.getElementById("story").innerText=story
